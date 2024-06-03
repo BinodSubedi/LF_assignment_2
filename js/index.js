@@ -9,5 +9,18 @@ modeChanger.addEventListener('click',()=>{
 })
 
 menu_toggler.addEventListener('click', ()=>{
+
     menu.classList.toggle('hidden');
+
 })
+window.addEventListener('resize', (e) => {
+
+    if(window.innerWidth > 750){
+        menu.classList.remove('hidden')
+    }
+
+    if(window.innerWidth < 750 && Array.from(menu.classList).length == 1){
+        menu.classList.add('hidden')
+    }
+
+});

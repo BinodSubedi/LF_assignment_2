@@ -2,18 +2,21 @@
 
 
 body{
+    // width: 100%;
     background-color: var(--color-secondary);
     display: grid;
     grid-template-columns: [container-start] 1fr [center-start] repeat(6,[col-start] minmax(min-content,16.67rem)[col-end]) [center-end] 1fr [container-end];
-    grid-template-rows: 12vh minmax(100vh,min-content) 20vh;
+    grid-template-rows: 12vh minmax(100vh,min-content) min-content;
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
 }
 
 
 .header{
     background-color: var(--color-primary);
-    grid-column: container-start/container-end;
+    grid-column: container-start / container-end;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
 }
 
 .navigation_bar{
@@ -83,7 +86,7 @@ body{
     display: grid;
     grid-template-rows: 88vh repeat(3, 100vh) minmax(40vh, min-content);
     grid-template-columns: [container-start] 1fr [center-start] repeat(6,[col-start] minmax(min-content,16.67rem)[col-end]) [center-end] 1fr [container-end];
-    gap: 6rem;
+    gap: 6rem 0;
 
 }
 
@@ -422,6 +425,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem 0;
+
 
 
     &__contents_and_logo{
@@ -535,10 +540,12 @@ body{
 
         .navigation_bar__right {
 
+            width: 40%;
             flex-direction: row-reverse;
-            justify-content: flex-start;
-            align-items: center;
-            margin-right: 4rem;
+            justify-content: center;
+            align-items: space-around;
+            // padding-right: 4rem;
+            margin-left: 2rem;
 
         }
 
@@ -605,6 +612,7 @@ body{
         font-size: 1.3rem !important;
     }
 
+
     .footer__contents_and_logo{
         padding-left: 1rem;
         h2{
@@ -613,16 +621,41 @@ body{
     }
 
     .footer__button{
-        padding: 1rem 2rem;
+        // padding: 1rem 2rem;
         // margin-right: 1rem;
+        // padding-bottom: 3rem;
     }
 
 }
 
 @media  screen and (max-width: 450px) {
 
+
     .introduction_content__main__heading{
         font-size: 2rem;
     }
     
+    .introduction_content__main__content{
+
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 2rem;
+
+    }
+
+
+    .download_cv_and_hello_button{
+        button{
+            font-size: 1.2rem !important;
+            margin-right: 1rem;
+        }
+    }
+
+    .footer__button{
+        margin-right: 1.5rem;
+        button{
+            font-size: 1rem;
+        }
+    }
+
 }
