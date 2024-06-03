@@ -19,7 +19,7 @@ body{
     width: 100vw;
 }
 
-.navigation_bar{
+.navigation-bar{
     display: flex;
     height: 100%;
     width: 100%;
@@ -49,7 +49,7 @@ body{
 
     }
 
-    &__face_icon{
+    &__face-icon{
         cursor: pointer;
     }
 
@@ -64,7 +64,7 @@ body{
         font-size: 1.6rem;
     }
 
-    &__face_icon{
+    &__face-icon{
         padding-right: calc(2.5rem + 8%);
         width: 24%;
         display: flex;
@@ -72,7 +72,7 @@ body{
         justify-content: center;
     }
 
-    &__menu_button{
+    &__menu-button{
         display: none;
     }
 
@@ -87,11 +87,10 @@ body{
     grid-template-rows: 88vh repeat(3, 100vh) minmax(40vh, min-content);
     grid-template-columns: [container-start] 1fr [center-start] repeat(6,[col-start] minmax(min-content,16.67rem)[col-end]) [center-end] 1fr [container-end];
     gap: 6rem 0;
-
 }
 
 
-.introduction_section{
+.introduction-section{
     background-color: var(--color-primary);
     grid-column: container-start / container-end;
     display: flex;
@@ -100,7 +99,7 @@ body{
 }
 
 
-.introduction_content{
+.introduction-content{
     padding-bottom: 2%;
     height: 90%;
     width: 80%;
@@ -109,7 +108,7 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    .profile_image_and_intro{
+    .profile-image-and-intro{
         height: calc(8rem + 10%);
         display: flex;
         flex-direction: column;
@@ -150,14 +149,14 @@ body{
         }
     }
 
-    &__buttons_and_logos{
+    &__buttons-and-logos{
 
         display: flex;
         flex-direction: column;
         align-items: center;
         min-width: calc(8rem + 10%);
     
-        .download_cv_and_hello_button{
+        .download-cv-and-hello-button{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -189,7 +188,7 @@ body{
             }
         }
 
-        .social_media_logos{
+        .social-media-logos{
             display: flex;
             margin-top: 3rem;
             width: 100%;
@@ -202,23 +201,23 @@ body{
 
 }
 
-.first_product_section{
+.first-product-section{
     background-color: var(--color-primary);
     grid-column: center-start / center-end;
 }
 
 
-.second_product_section{
+.second-product-section{
     background-color: var(--color-primary);
     grid-column: center-start / center-end;
 }
 
-.final_product_section{
+.final-product-section{
     background-color: var(--color-primary);
     grid-column: center-start / center-end;
 }
 
-.product_section{
+.product-section{
     display: flex;
 
     &__left{
@@ -235,14 +234,14 @@ body{
             align-items: flex-start;
             
 
-            &__uppermost_unit{
+            &__uppermost-unit{
                 display: flex;
                 flex-direction: column;
                 align-items:flex-start;
                 justify-content: center;
 
 
-                .product__upper_logo_and_tag{
+                .product__upper-logo-and-tag{
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -252,11 +251,11 @@ body{
                     font-size: 1.4rem;
                 }
 
-                .product__upper_logo_and_tag img{
+                .product__upper-logo-and-tag img{
                     padding-right: 1rem;
                 }
 
-                .product__upper_logo_and_name{
+                .product__upper-logo-and-name{
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
@@ -279,14 +278,14 @@ body{
                 line-height: 190%;
             }
 
-            &__logos_and_button{
+            &__logos-and-button{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
                 margin: 2rem 0;
 
-                .left_product_logos{
+                .left-product-logos{
                     margin-bottom: 3rem;
                     display: flex;
                     align-items: center;
@@ -323,17 +322,17 @@ body{
 
 }
 
-.final_product_section{
+.final-product-section{
 
 
-    .product__upper_logo_and_name img{
+    .product__upper-logo-and-name img{
         margin: 0;
     }
 
 }
 
 
-.application_and_tools_section{
+.application-and-tools-section{
     background-color: var(--color-primary);
     grid-column: container-start / container-end;
     display: flex;
@@ -361,7 +360,7 @@ body{
         flex-wrap: wrap;
 
 
-        .application_and_tools__unit{
+        .application-and-tools__unit{
 
             display: flex;
             flex-direction: column;
@@ -371,7 +370,7 @@ body{
             padding: 0 3rem 4rem;
             border-bottom: 0.3rem var(--color-secondary) solid;
 
-            &__logo_and_heading{
+            &__logo-and-heading{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -401,7 +400,7 @@ body{
 
     }
 
-    &__load_more_section{
+    &__load-more-section{
         height: 3rem;
         margin: 0 0 3rem;
         width: 80%;
@@ -429,7 +428,7 @@ body{
 
 
 
-    &__contents_and_logo{
+    &__contents-and-logo{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -468,7 +467,7 @@ body{
 @media  screen and (max-width: 1000px) {
 
 
-    .introduction_content__main{
+    .introduction-content__main{
         &__heading{
             font-size: 4.4rem;
         }
@@ -478,14 +477,14 @@ body{
         }
     }
 
-    .product_section{
+    .product-section{
         flex-direction: column-reverse;
 
         &__left{
             height: 58%;
             width: 100%;
 
-            .product__upper_logo_and_name p {
+            .product__upper-logo-and-name p {
                 font-size: 2rem;
             }
 
@@ -518,13 +517,13 @@ body{
 
 
 @media screen and (max-width: 750px){
-.navigation_bar {
+.navigation-bar {
         display: flex;
         align-items: center;
         justify-content: space-around;
 
 
-        &__menu_button{
+        &__menu-button{
             display: block;
             background-color: var(--color-secondary);
             color: var(--color-text-primary);
@@ -534,11 +533,11 @@ body{
             margin-left: 2rem;
         }
 
-        &__face_icon img{
+        &__face-icon img{
             margin-right: 1rem;
         }
 
-        .navigation_bar__right {
+        .navigation-bar__right {
 
             width: 40%;
             flex-direction: row-reverse;
@@ -572,8 +571,8 @@ body{
     }
 
 
-    .introduction_content{
-        .profile_image_and_intro p{
+    .introduction-content{
+        .profile-image-and-intro p{
             font-size: 1.8rem;
         }
 
@@ -582,11 +581,11 @@ body{
         }
     }
 
-    .product_section__left__contents__main{
+    .product-section__left__contents__main{
         font-size: 1.2rem;
     }
 
-    .product_section__left__contents__logos_and_button{
+    .product-section__left__contents__logos-and-button{
         button{
             font-size: 1rem;
             padding: 1rem 2rem;
@@ -594,7 +593,7 @@ body{
         }
     }
 
-    .left_product_logos{
+    .left-product-logos{
         justify-content: flex-start;
         flex-wrap: wrap;
         img{
@@ -602,28 +601,30 @@ body{
         }
     }
 
-    .application_and_tools_section{
+    .application-and-tools-section{
         &__heading{
             font-size: 1.5rem;
         }
     }
 
-    .application_and_tools__unit__main{
+    .application-and-tools__unit__main{
         font-size: 1.3rem !important;
     }
 
 
-    .footer__contents_and_logo{
+    .footer__contents-and-logo{
         padding-left: 1rem;
         h2{
             font-size: 1.8rem;
         }
     }
 
+
     .footer__button{
-        // padding: 1rem 2rem;
-        // margin-right: 1rem;
-        // padding-bottom: 3rem;
+        margin-right: 1.5rem;
+        // button{
+        //     font-size: 1rem;
+        // }
     }
 
 }
@@ -631,11 +632,19 @@ body{
 @media  screen and (max-width: 450px) {
 
 
-    .introduction_content__main__heading{
+    // .left-product-logos{
+    //     padding: 0 3rem;
+    // }
+
+    .product-section__left__contents{
+        padding: 0 3rem;
+    }
+
+    .introduction-content__main__heading{
         font-size: 2rem;
     }
     
-    .introduction_content__main__content{
+    .introduction-content__main__content{
 
         font-size: 1.2rem;
         text-align: center;
@@ -644,7 +653,7 @@ body{
     }
 
 
-    .download_cv_and_hello_button{
+    .download-cv-and-hello-button{
         button{
             font-size: 1.2rem !important;
             margin-right: 1rem;
@@ -655,6 +664,7 @@ body{
         margin-right: 1.5rem;
         button{
             font-size: 1rem;
+            padding: 1rem 2rem;
         }
     }
 
