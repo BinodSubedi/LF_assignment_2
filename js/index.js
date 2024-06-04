@@ -9,6 +9,8 @@ modeChanger.addEventListener('click',()=>{
 
     const darkChoice_or_white = Array.from(document.body.classList).length;
 
+    modeChanger.src = `./assets/icons/${ darkChoice_or_white == 0 ? 'face_logo.png' : 'moon.jpg'}`
+
     document.body.classList.toggle('dark_theme');
 
     const ligh_mode = ['linkedin_white.png', 'instagram_white.png', 'dribble_white.png', 'github_white.png'];

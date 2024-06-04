@@ -51,6 +51,11 @@ body{
 
     &__face-icon{
         cursor: pointer;
+
+        img{
+            height: 4rem;
+            width: 4rem;
+        }
     }
 
     &__elements{
@@ -360,6 +365,10 @@ body{
         flex-wrap: wrap;
 
 
+        // .application--last-row{
+        //     border: none !important;
+        // }
+
         .application-and-tools__unit{
 
             display: flex;
@@ -378,13 +387,33 @@ body{
                 font-size: 2rem;
 
                 img{
-                    // height: 3rem;
-                    // width: 3rem;
-                    padding: 3rem;
-                    // border-radius: 50%;
-                    border-radius: 3.3rem;
-                    object-fit: cover;
+                    height: 5rem;
+                    width: 5rem;
+                    padding: 1rem;
+                    border-radius: 50%;
+                    // border-radius: 3.3rem;
+                    box-shadow: inset 0 0 0 1px #ddd;
+                    object-fit: contain;
                     background-color: var(--color-secondary);
+                }
+
+                .application__last-logos{
+                    position: relative;
+                    
+                    img{
+                        padding: 0;
+                    }
+
+                    img:first-child{
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+
+                .github-logo--absolute{
+                    z-index: 0;
+                    position: absolute;
+                    right: -50%;
                 }
 
                 h3{
@@ -516,7 +545,12 @@ body{
 }
 
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 768px){
+
+.introduction-content{
+    justify-content: center;
+}
+
 .navigation-bar {
         display: flex;
         align-items: center;
